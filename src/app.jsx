@@ -5,6 +5,9 @@ const {Route, HashRouter, Routes, IndexRoute, hashHistory} = require('react-rout
 const Main = require('Components/Main');
 const Weather = require('Components/Weather');
 
+require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
+$(document).foundation();
+
 const root = createRoot(document.getElementById('app'));
 
 root.render(
